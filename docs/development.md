@@ -32,6 +32,24 @@ Testing commands will be added as application code is introduced.
 
 The project should include automated tests for backend business logic and API behavior as the backend grows.
 
+Backend tests can be run with:
+
+```bash
+cd backend
+./mvnw test
+```
+
+## Running the Backend
+
+The backend can be started with:
+
+```bash
+cd backend
+./mvnw spring-boot:run
+```
+
+By default, the backend runs on port `8080`.
+
 ## Git Workflow
 
 For documentation and small setup changes, commits may be made directly on `main`.
