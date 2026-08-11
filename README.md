@@ -29,6 +29,6 @@ OpsCore is planned as a client-server application:
 
 ```text
 macOS / Windows Desktop App
-→ Backend API
-→ Relational Database
+-> Backend API
+-> Relational Database
 ```
