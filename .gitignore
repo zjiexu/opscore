@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Java / Maven
+target/
+**/target/
+
+# Node / Frontend
+node_modules/
+dist/
+build/
+coverage/
+
+# OS / temp
+tmp/
+*.tmp
