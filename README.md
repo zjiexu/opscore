@@ -6,7 +6,7 @@ It is designed to centralize products, vendors, inventory, purchase orders, inve
 
 ## Project Status
 
-OpsCore is in early development.
+OpsCore is in early development. The repository currently includes the initial Spring Boot backend scaffold.
 
 The MVP goal is to deliver a usable desktop application for macOS and Windows that can be downloaded from GitHub releases and used to manage core retail operations.
 
@@ -31,4 +31,14 @@ OpsCore is planned as a client-server application:
 macOS / Windows Desktop App
 -> Backend API
 -> Relational Database
+```
+
+## Local Development
+
+Backend commands:
+
+```bash
+cd backend
+./mvnw test
+./mvnw spring-boot:run
 ```
