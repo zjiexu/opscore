@@ -26,6 +26,35 @@ Planned development tools include:
 - Node.js
 - Git
 
+## Database Setup
+
+OpsCore uses PostgreSQL for local backend development.
+
+Create the local development database and user:
+
+```sql
+CREATE USER opscore_user WITH PASSWORD 'opscore_password';
+CREATE DATABASE opscore_dev OWNER opscore_user;
+```
+
+The password above is a local development default and must not be used for production.
+
+Verify the connection:
+
+```bash
+psql "host=localhost port=5432 dbname=opscore_dev user=opscore_user password=opscore_password"
+```
+
+For non-local environments, provide database settings through environment variables:
+
+```text
+OPSCORE_DB_URL
+OPSCORE_DB_USERNAME
+OPSCORE_DB_PASSWORD
+```
+
+If these variables are not set, the backend uses local development defaults from `application.properties`.
+
 ## Testing
 
 Testing commands will be added as application code is introduced.
